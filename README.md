@@ -21,7 +21,7 @@ npm install --legacy-peer-deps
             "runtimeArgs": ["start"],
             "console": "integratedTerminal",
             "serverReadyAction": {
-                "pattern": "Servidor iniciando na porta: (https?://\\S+)",
+                "pattern": "Servidor sendo executado em (https?://\\S+)",
                 "uriFormat": "%s",
                 "action": "openExternally"
             }
