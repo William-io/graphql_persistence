@@ -1,2 +1,3 @@
-const mongoUrl = "mongodb+srv://william-io:K9zliGqAtPKCaLlA@ndstr.bgmwl.mongodb.net/?appName=ndstr";
+//Inserir sua URL
+const mongoUrl = "";
 export default mongoUrl;
