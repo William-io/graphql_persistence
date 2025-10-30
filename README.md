@@ -5,3 +5,27 @@ Para contornar esse problema, utilize o comando abaixo para instalar os pacotes 
 ```bash
 npm install --legacy-peer-deps
 ```
+
+
+## Configuração - Debug_
+
+```json
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Debug GraphQL",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": ["start"],
+            "console": "integratedTerminal",
+            "serverReadyAction": {
+                "pattern": "Servidor iniciando na porta: (https?://\\S+)",
+                "uriFormat": "%s",
+                "action": "openExternally"
+            }
+        }
+    ]
+}
+```
