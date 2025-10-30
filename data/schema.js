@@ -33,6 +33,8 @@ const schema = buildSchema(`
 
   type Mutation {
     createProduct(input: ProductInput): Product
+    updateProduct(input: ProductInput): Product
+    deleteProduct(id: ID!): Product
   }
 `);
 
