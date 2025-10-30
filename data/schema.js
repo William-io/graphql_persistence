@@ -9,13 +9,30 @@ const schema = buildSchema(`
     soldout: Boolean
     stores: [Store]!
   }
-
+    
   type Store {
     name: String
   }
 
   type Query {
-    product: Product
+    getProduct(id: ID): Product
+  }
+
+  input StoreInput {
+    name: String
+  }
+
+  input ProductInput {
+    id: ID
+    name: String
+    description: String
+    price: Float
+    soldout: Boolean
+    stores: [StoreInput]!
+  }
+
+  type Mutation {
+    createProduct(input: ProductInput): Product
   }
 `);
 

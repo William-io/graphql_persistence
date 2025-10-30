@@ -1,0 +1,6 @@
+@echo off
+echo Iniciando servidor GraphQL...
+start /B npm start
+timeout /t 3 /nobreak > nul
+echo Abrindo Chrome...
+start chrome http://localhost:8080/graphql

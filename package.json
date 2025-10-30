@@ -7,7 +7,8 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./index.js --exec babel-node -e js"
+    "start": "nodemon ./index.js --exec babel-node -e js",
+    "dev": "nodemon ./index.js --exec babel-node -e js & timeout /t 3 & start chrome http://localhost:8080/graphql"
   },
   "dependencies": {
     "express": "^5.1.0",
